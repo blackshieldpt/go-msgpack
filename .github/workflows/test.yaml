@@ -53,6 +53,7 @@ jobs:
         with:
           path: coverage.out
           name: Coverage-report
+          retention-days: 7
       - name: Display coverage report
         run: go tool cover -func=coverage.out
       - name: Build Go
